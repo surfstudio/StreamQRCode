@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3B0451BA276A3D1500EFE06D /* StreamQRCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0451B9276A3D1500EFE06D /* StreamQRCodeApp.swift */; };
-		3B0451BC276A3D1500EFE06D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0451BB276A3D1500EFE06D /* ContentView.swift */; };
+		3B0451BC276A3D1500EFE06D /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0451BB276A3D1500EFE06D /* MainScreen.swift */; };
 		3B0451BE276A3D1600EFE06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0451BD276A3D1600EFE06D /* Assets.xcassets */; };
 		3B0451C1276A3D1600EFE06D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0451C0276A3D1600EFE06D /* Preview Assets.xcassets */; };
+		3B0451C8276A40F400EFE06D /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0451C7276A40F400EFE06D /* PhotoPicker.swift */; };
+		3B0451CA276A480000EFE06D /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0451C9276A480000EFE06D /* SnapCarousel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B0451B6276A3D1500EFE06D /* StreamQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0451B9276A3D1500EFE06D /* StreamQRCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamQRCodeApp.swift; sourceTree = "<group>"; };
-		3B0451BB276A3D1500EFE06D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B0451BB276A3D1500EFE06D /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		3B0451BD276A3D1600EFE06D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0451C0276A3D1600EFE06D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B0451C7276A40F400EFE06D /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		3B0451C9276A480000EFE06D /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				3B0451B9276A3D1500EFE06D /* StreamQRCodeApp.swift */,
-				3B0451BB276A3D1500EFE06D /* ContentView.swift */,
+				3B0451BB276A3D1500EFE06D /* MainScreen.swift */,
+				3B0451C7276A40F400EFE06D /* PhotoPicker.swift */,
+				3B0451C9276A480000EFE06D /* SnapCarousel.swift */,
 				3B0451BD276A3D1600EFE06D /* Assets.xcassets */,
 				3B0451BF276A3D1600EFE06D /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0451BC276A3D1500EFE06D /* ContentView.swift in Sources */,
+				3B0451BC276A3D1500EFE06D /* MainScreen.swift in Sources */,
+				3B0451CA276A480000EFE06D /* SnapCarousel.swift in Sources */,
 				3B0451BA276A3D1500EFE06D /* StreamQRCodeApp.swift in Sources */,
+				3B0451C8276A40F400EFE06D /* PhotoPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
