@@ -1,5 +1,8 @@
 # StreamQRCode
 ## Stream 1: 
+
+https://www.youtube.com/watch?v=Cf1VnOQ3jzA
+
 - wrote a layer for working with photos
 - wrote snap carousel
 
