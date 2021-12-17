@@ -3,7 +3,7 @@
 - wrote a layer for working with photos
 - wrote snap carousel
 
-[Screen Recording](https://i.imgur.com/4j1SnLVm.mp4)
+[Screen Recording](https://imgur.com/4j1SnLV)
 
 ## Usefull links:
 
