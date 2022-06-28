@@ -13,7 +13,38 @@
 		3B0451C1276A3D1600EFE06D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0451C0276A3D1600EFE06D /* Preview Assets.xcassets */; };
 		3B0451C8276A40F400EFE06D /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0451C7276A40F400EFE06D /* PhotoPicker.swift */; };
 		3B0451CA276A480000EFE06D /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0451C9276A480000EFE06D /* SnapCarousel.swift */; };
+		3B56746D27BBF91A0019B538 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B56746C27BBF91A0019B538 /* WidgetKit.framework */; };
+		3B56746F27BBF91A0019B538 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B56746E27BBF91A0019B538 /* SwiftUI.framework */; };
+		3B56747227BBF91A0019B538 /* BeatyQrWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56747127BBF91A0019B538 /* BeatyQrWidget.swift */; };
+		3B56747527BBF91C0019B538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B56747427BBF91C0019B538 /* Assets.xcassets */; };
+		3B56747727BBF91C0019B538 /* BeatyQrWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3B56747327BBF91A0019B538 /* BeatyQrWidget.intentdefinition */; };
+		3B56747827BBF91C0019B538 /* BeatyQrWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3B56747327BBF91A0019B538 /* BeatyQrWidget.intentdefinition */; };
+		3B56747B27BBF91C0019B538 /* BeatyQrWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B56746A27BBF91A0019B538 /* BeatyQrWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B56747927BBF91C0019B538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B0451AE276A3D1500EFE06D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B56746927BBF91A0019B538;
+			remoteInfo = BeatyQrWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B56747C27BBF91C0019B538 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3B56747B27BBF91C0019B538 /* BeatyQrWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3B0451B6276A3D1500EFE06D /* StreamQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +54,15 @@
 		3B0451C0276A3D1600EFE06D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B0451C7276A40F400EFE06D /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		3B0451C9276A480000EFE06D /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
+		3B56746A27BBF91A0019B538 /* BeatyQrWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BeatyQrWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B56746C27BBF91A0019B538 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3B56746E27BBF91A0019B538 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3B56747127BBF91A0019B538 /* BeatyQrWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatyQrWidget.swift; sourceTree = "<group>"; };
+		3B56747327BBF91A0019B538 /* BeatyQrWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BeatyQrWidget.intentdefinition; sourceTree = "<group>"; };
+		3B56747427BBF91C0019B538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B56747627BBF91C0019B538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B56748027BBFF700019B538 /* StreamQRCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StreamQRCode.entitlements; sourceTree = "<group>"; };
+		3B56748127BBFFAE0019B538 /* BeatyQrWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeatyQrWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,13 +73,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B56746727BBF91A0019B538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B56746F27BBF91A0019B538 /* SwiftUI.framework in Frameworks */,
+				3B56746D27BBF91A0019B538 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3B0451AD276A3D1500EFE06D = {
 			isa = PBXGroup;
 			children = (
+				3B56748127BBFFAE0019B538 /* BeatyQrWidgetExtension.entitlements */,
 				3B0451B8276A3D1500EFE06D /* StreamQRCode */,
+				3B56747027BBF91A0019B538 /* BeatyQrWidget */,
+				3B56746B27BBF91A0019B538 /* Frameworks */,
 				3B0451B7276A3D1500EFE06D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				3B0451B6276A3D1500EFE06D /* StreamQRCode.app */,
+				3B56746A27BBF91A0019B538 /* BeatyQrWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +108,7 @@
 		3B0451B8276A3D1500EFE06D /* StreamQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				3B56748027BBFF700019B538 /* StreamQRCode.entitlements */,
 				3B0451B9276A3D1500EFE06D /* StreamQRCodeApp.swift */,
 				3B0451BB276A3D1500EFE06D /* MainScreen.swift */,
 				3B0451C7276A40F400EFE06D /* PhotoPicker.swift */,
@@ -73,6 +127,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3B56746B27BBF91A0019B538 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B56746C27BBF91A0019B538 /* WidgetKit.framework */,
+				3B56746E27BBF91A0019B538 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B56747027BBF91A0019B538 /* BeatyQrWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3B56747127BBF91A0019B538 /* BeatyQrWidget.swift */,
+				3B56747327BBF91A0019B538 /* BeatyQrWidget.intentdefinition */,
+				3B56747427BBF91C0019B538 /* Assets.xcassets */,
+				3B56747627BBF91C0019B538 /* Info.plist */,
+			);
+			path = BeatyQrWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +157,34 @@
 				3B0451B2276A3D1500EFE06D /* Sources */,
 				3B0451B3276A3D1500EFE06D /* Frameworks */,
 				3B0451B4276A3D1500EFE06D /* Resources */,
+				3B56747C27BBF91C0019B538 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3B56747A27BBF91C0019B538 /* PBXTargetDependency */,
 			);
 			name = StreamQRCode;
 			productName = StreamQRCode;
 			productReference = 3B0451B6276A3D1500EFE06D /* StreamQRCode.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3B56746927BBF91A0019B538 /* BeatyQrWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B56747F27BBF91C0019B538 /* Build configuration list for PBXNativeTarget "BeatyQrWidgetExtension" */;
+			buildPhases = (
+				3B56746627BBF91A0019B538 /* Sources */,
+				3B56746727BBF91A0019B538 /* Frameworks */,
+				3B56746827BBF91A0019B538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeatyQrWidgetExtension;
+			productName = BeatyQrWidgetExtension;
+			productReference = 3B56746A27BBF91A0019B538 /* BeatyQrWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,11 +193,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					3B0451B5276A3D1500EFE06D = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					3B56746927BBF91A0019B538 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -122,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				3B0451B5276A3D1500EFE06D /* StreamQRCode */,
+				3B56746927BBF91A0019B538 /* BeatyQrWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +233,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B56746827BBF91A0019B538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B56747527BBF91C0019B538 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,12 +250,30 @@
 			files = (
 				3B0451BC276A3D1500EFE06D /* MainScreen.swift in Sources */,
 				3B0451CA276A480000EFE06D /* SnapCarousel.swift in Sources */,
+				3B56747827BBF91C0019B538 /* BeatyQrWidget.intentdefinition in Sources */,
 				3B0451BA276A3D1500EFE06D /* StreamQRCodeApp.swift in Sources */,
 				3B0451C8276A40F400EFE06D /* PhotoPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B56746627BBF91A0019B538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B56747227BBF91A0019B538 /* BeatyQrWidget.swift in Sources */,
+				3B56747727BBF91C0019B538 /* BeatyQrWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B56747A27BBF91C0019B538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B56746927BBF91A0019B538 /* BeatyQrWidgetExtension */;
+			targetProxy = 3B56747927BBF91C0019B538 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3B0451C2276A3D1600EFE06D /* Debug */ = {
@@ -272,8 +395,10 @@
 		3B0451C5276A3D1600EFE06D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StreamQRCode/StreamQRCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StreamQRCode/Preview Content\"";
@@ -301,8 +426,10 @@
 		3B0451C6276A3D1600EFE06D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StreamQRCode/StreamQRCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StreamQRCode/Preview Content\"";
@@ -327,6 +454,64 @@
 			};
 			name = Release;
 		};
+		3B56747D27BBF91C0019B538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BeatyQrWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65HCRGU5FA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeatyQrWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeatyQrWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ilya.StreamQRCode.BeatyQrWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B56747E27BBF91C0019B538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BeatyQrWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65HCRGU5FA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeatyQrWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeatyQrWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ilya.StreamQRCode.BeatyQrWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +529,15 @@
 			buildConfigurations = (
 				3B0451C5276A3D1600EFE06D /* Debug */,
 				3B0451C6276A3D1600EFE06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B56747F27BBF91C0019B538 /* Build configuration list for PBXNativeTarget "BeatyQrWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B56747D27BBF91C0019B538 /* Debug */,
+				3B56747E27BBF91C0019B538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

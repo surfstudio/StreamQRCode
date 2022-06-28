@@ -17,7 +17,7 @@ struct MainScreen: View {
         NavigationView {
             VStack {
                 NavigationLink(isActive: $isPhotoSelected) {
-                    
+                    SnapCarousel()
                 } label: {}
 
                 VStack {

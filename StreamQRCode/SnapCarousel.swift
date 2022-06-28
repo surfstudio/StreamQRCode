@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct SnapCarousel: View {
     let padding: CGFloat = 0
@@ -14,34 +15,44 @@ struct SnapCarousel: View {
     @State var buffer: CGFloat = 0
     @State var offset: CGFloat = 0
     @State var currentIndex: Int = 0
+    @State var currentImageName: String = ""
     var body: some View {
-        GeometryReader { proxy in
-            HStack(spacing: spacing) {
-                ForEach(1...5, id: \.self) { num in
-                    GeometryReader { imageProxy in
-                        Image("placeholder1")
-                            .resizable()
-                            .scaleEffect(getScale(parrentProxy: proxy, imageProxy: imageProxy))
+        VStack {
+            GeometryReader { proxy in
+                HStack(spacing: spacing) {
+                    ForEach(1...5, id: \.self) { num in
+                        GeometryReader { imageProxy in
+                            Image("placeholder\(num)")
+                                .resizable()
+                                .scaleEffect(getScale(parrentProxy: proxy, imageProxy: imageProxy))
+                        }
+                        .frame(width: size, height: size)
+                        .padding(padding)
                     }
-                    .frame(width: size, height: size)
-                    .padding(padding)
                 }
+                .offset(x: (proxy.size.width - size) / 2 + offset)
+                .frame(maxHeight: .infinity)
+                .gesture(
+                    DragGesture()
+                        .onChanged({ value in
+                            offset = buffer + value.translation.width
+                        })
+                        .onEnded({ value in
+                            currentIndex += -Int((value.translation.width / proxy.size.width).rounded())
+                            offset = -(size + spacing) * CGFloat(currentIndex)
+                            buffer = offset
+                            currentIndex = min(currentIndex, 3)
+                            currentImageName = "placeholder\(currentIndex + 1)"
+                        })
+                )
+                .animation(.easeInOut, value: offset)
             }
-            .offset(x: (proxy.size.width - size) / 2 + offset)
-            .frame(maxHeight: .infinity)
-            .gesture(
-                DragGesture()
-                    .onChanged({ value in
-                        offset = buffer + value.translation.width
-                    })
-                    .onEnded({ value in
-                        currentIndex += -Int((value.translation.width / proxy.size.width).rounded())
-                        offset = -(size + spacing) * CGFloat(currentIndex)
-                        buffer = offset
-                        currentIndex = min(currentIndex, 3)
-                    })
-            )
-            .animation(.easeInOut, value: offset)
+            Button {
+                saveImageInStorage()
+            } label: {
+                Text("Готово")
+            }
+
         }
     }
     
@@ -64,6 +75,20 @@ struct SnapCarousel: View {
         
         return scale
     }
+    
+    func saveImageInStorage() {
+        let userDefaults = UserDefaults(suiteName: "group.streamQRCode")
+        if let data = userDefaults?.object(forKey: "streamImage") as? Data {
+            let oldImage = UIImage(data: data)
+            print(oldImage)
+        }
+        let image = UIImage(named: currentImageName)
+        let data = image?.pngData()
+        userDefaults?.set(data, forKey: "streamImage")
+        userDefaults?.synchronize()
+        WidgetCenter.shared.reloadAllTimelines()
+    }
+    
 }
 
 struct SnapCarousel_Previews: PreviewProvider {
